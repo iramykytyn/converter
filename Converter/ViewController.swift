@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: property
+    @IBOutlet weak var loadMediaBook: UIButton!
+    @IBOutlet weak var urlTextField: UITextField!
+    @IBOutlet weak var convertButton: UIButton!
+    
+    //MARK: action
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func onLoadBook(sender: AnyObject) {
     }
 
-
+    @IBAction func onConvert(sender: AnyObject) {
+    }
 }
 
