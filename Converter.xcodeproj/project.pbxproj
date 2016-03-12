@@ -14,6 +14,8 @@
 		CC9C36071C54F92B007F4362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9C36061C54F92B007F4362 /* Assets.xcassets */; };
 		CC9C360A1C54F92B007F4362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C36081C54F92B007F4362 /* LaunchScreen.storyboard */; };
 		CCA54BFB1C7E2F7700237FD5 /* SocketIOClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA54BFA1C7E2F7700237FD5 /* SocketIOClientSwift.framework */; };
+		CCA54BFD1C7E315F00237FD5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA54BFC1C7E315F00237FD5 /* Client.swift */; };
+		CCB8D4D11C7EE117007CFF1B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB8D4D01C7EE117007CFF1B /* CocoaAsyncSocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		CC9C36091C54F92B007F4362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC9C360B1C54F92B007F4362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA54BFA1C7E2F7700237FD5 /* SocketIOClientSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIOClientSwift.framework; path = "Pods/../build/Debug-iphoneos/SocketIOClientSwift.framework"; sourceTree = "<group>"; };
+		CCA54BFC1C7E315F00237FD5 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		CCB8D4CE1C7E4B16007CFF1B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "Pods/../build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		CCB8D4D01C7EE117007CFF1B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "Pods/../build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
 		D40E4548DFB8DDD581402AAB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB8D4D11C7EE117007CFF1B /* CocoaAsyncSocket.framework in Frameworks */,
 				CCA54BFB1C7E2F7700237FD5 /* SocketIOClientSwift.framework in Frameworks */,
 				55C590D35DD3EF6CF0DFF638 /* Pods.framework in Frameworks */,
 			);
@@ -46,6 +52,8 @@
 		62B973E986ED5F7D229733E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCB8D4D01C7EE117007CFF1B /* CocoaAsyncSocket.framework */,
+				CCB8D4CE1C7E4B16007CFF1B /* CocoaAsyncSocket.framework */,
 				CCA54BFA1C7E2F7700237FD5 /* SocketIOClientSwift.framework */,
 				A942E1462407DB6BF2DCCB73 /* Pods.framework */,
 			);
@@ -84,6 +92,7 @@
 			children = (
 				CC9C35FF1C54F92B007F4362 /* AppDelegate.swift */,
 				CC9C36011C54F92B007F4362 /* ViewController.swift */,
+				CCA54BFC1C7E315F00237FD5 /* Client.swift */,
 				CC9C36031C54F92B007F4362 /* Main.storyboard */,
 				CC9C36061C54F92B007F4362 /* Assets.xcassets */,
 				CC9C36081C54F92B007F4362 /* LaunchScreen.storyboard */,
@@ -217,6 +226,7 @@
 			files = (
 				CC9C36021C54F92B007F4362 /* ViewController.swift in Sources */,
 				CC9C36001C54F92B007F4362 /* AppDelegate.swift in Sources */,
+				CCA54BFD1C7E315F00237FD5 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
