@@ -6,8 +6,6 @@
 //  Copyright © 2016 IraM. All rights reserved.
 //
 
-import SocketIOClientSwift
-import CocoaAsyncSocket
 import UIKit
 import Foundation
 
@@ -17,7 +15,7 @@ enum BookType {
     case UNDEFINED
 }
 
-class ViewController: UIViewController, GCDAsyncSocketDelegate{
+class ViewController: UIViewController{
 
     //MARK: property
     @IBOutlet weak var loadMediaBook: UIButton!
@@ -38,14 +36,24 @@ class ViewController: UIViewController, GCDAsyncSocketDelegate{
     }
 
 
-    @IBAction func onLoadBook(sender: AnyObject) {
+   /* @IBAction func onLoadBook(sender: AnyObject) {
         //Open file menager and choose book
         //pick book url to urlTextField
+        
+        
+        //get book from local storage (iCloud or iBooks)
+        
+        
+        //get book from Dropbox
+        
+        
+        //get book from Google Drive
         self.urlTextField.resignFirstResponder()
         print("Choosen book mybook.pdf (url -> https://vk.com/doc139277848_366386809?hash).")
         urlTextField.text = "mybook.pdf"
         bookType = BookType.FILE
     }
+*/
 
     @IBAction func onConvert(sender: AnyObject) {
         self.urlTextField.resignFirstResponder()
