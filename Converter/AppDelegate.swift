@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import SocketIOClientSwift
 import CocoaAsyncSocket
+import SwiftyDropbox
 
 
 @UIApplicationMain
@@ -18,7 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCDAsyncSocketDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Dropbox.setupWithAppKey("ggbnctg4ej981gz")
+        
+        
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        
+        if let authResult = Dropbox.handleRedirectURL(url) {
+            switch authResult {
+            case .Success(let token):
+                print("Success! User is logged into Dropbox.")
+            case .Error(let error, let description):
+                print("Error: \(description)")
+            }
+        }
+        
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {

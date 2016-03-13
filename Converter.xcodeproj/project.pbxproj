@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		55C590D35DD3EF6CF0DFF638 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A942E1462407DB6BF2DCCB73 /* Pods.framework */; };
 		CC6C2E2E1C949ACC00038F5E /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2E2D1C949ACC00038F5E /* FileManagerViewController.swift */; };
+		CC6C2E301C95DB2200038F5E /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6C2E2F1C95DB2200038F5E /* SwiftyDropbox.framework */; };
+		CC6C2E321C95DFD700038F5E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6C2E311C95DFD700038F5E /* Alamofire.framework */; };
 		CC9C36001C54F92B007F4362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C35FF1C54F92B007F4362 /* AppDelegate.swift */; };
 		CC9C36021C54F92B007F4362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C36011C54F92B007F4362 /* ViewController.swift */; };
 		CC9C36051C54F92B007F4362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C36031C54F92B007F4362 /* Main.storyboard */; };
 		CC9C36071C54F92B007F4362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9C36061C54F92B007F4362 /* Assets.xcassets */; };
 		CC9C360A1C54F92B007F4362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C36081C54F92B007F4362 /* LaunchScreen.storyboard */; };
-		CCA54BFB1C7E2F7700237FD5 /* SocketIOClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA54BFA1C7E2F7700237FD5 /* SocketIOClientSwift.framework */; };
 		CCA54BFD1C7E315F00237FD5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA54BFC1C7E315F00237FD5 /* Client.swift */; };
 		CCB8D4D11C7EE117007CFF1B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB8D4D01C7EE117007CFF1B /* CocoaAsyncSocket.framework */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,8 @@
 		925AE8A180069655B50C4F5E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A942E1462407DB6BF2DCCB73 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C2E2D1C949ACC00038F5E /* FileManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
+		CC6C2E2F1C95DB2200038F5E /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDropbox.framework"; sourceTree = "<group>"; };
+		CC6C2E311C95DFD700038F5E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		CC9C35FC1C54F92A007F4362 /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9C35FF1C54F92B007F4362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC9C36011C54F92B007F4362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6C2E321C95DFD700038F5E /* Alamofire.framework in Frameworks */,
+				CC6C2E301C95DB2200038F5E /* SwiftyDropbox.framework in Frameworks */,
 				CCB8D4D11C7EE117007CFF1B /* CocoaAsyncSocket.framework in Frameworks */,
-				CCA54BFB1C7E2F7700237FD5 /* SocketIOClientSwift.framework in Frameworks */,
 				55C590D35DD3EF6CF0DFF638 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +58,8 @@
 		62B973E986ED5F7D229733E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC6C2E311C95DFD700038F5E /* Alamofire.framework */,
+				CC6C2E2F1C95DB2200038F5E /* SwiftyDropbox.framework */,
 				CCB8D4D01C7EE117007CFF1B /* CocoaAsyncSocket.framework */,
 				CCB8D4CE1C7E4B16007CFF1B /* CocoaAsyncSocket.framework */,
 				CCA54BFA1C7E2F7700237FD5 /* SocketIOClientSwift.framework */,
@@ -344,13 +350,14 @@
 			baseConfigurationReference = 925AE8A180069655B50C4F5E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iram.Converter;
+				PRODUCT_BUNDLE_IDENTIFIER = iram.eBooker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -360,13 +367,14 @@
 			baseConfigurationReference = D40E4548DFB8DDD581402AAB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iram.Converter;
+				PRODUCT_BUNDLE_IDENTIFIER = iram.eBooker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

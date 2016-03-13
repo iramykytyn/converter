@@ -79,7 +79,6 @@
         <!--File storages-->
         <scene sceneID="GgM-Po-WwD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWa-cv-xhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="8tG-zZ-fgx" customClass="FileManagerViewController" customModule="Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SR3-CZ-ddJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -126,6 +125,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUq-Ns-Pgt">
                                                     <rect key="frame" x="266" y="7" width="68" height="30"/>
                                                     <state key="normal" title="Dropbox"/>
+                                                    <connections>
+                                                        <action selector="linkButtonPressed:" destination="8tG-zZ-fgx" eventType="touchUpInside" id="n3E-E6-ryZ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -169,8 +171,9 @@
                         <outlet property="doneButton" destination="RDx-Mc-hlS" id="OG4-cr-bu5"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWa-cv-xhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="301"/>
+            <point key="canvasLocation" x="1997" y="349"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eoa-6R-mxb">

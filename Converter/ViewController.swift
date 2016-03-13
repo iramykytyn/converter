@@ -61,6 +61,7 @@ class ViewController: UIViewController{
             booksManager.sendBookUrl(bookType, urlString: urlTextField.text!)
             bookType = BookType.URL
         } else {
+            //Add alert with asking enter url or choose book from storage
             print("urlTextField is empty!")
         }
         
